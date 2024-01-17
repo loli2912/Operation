@@ -87,6 +87,7 @@ a {
   line-height: 50px;
   min-width: 118px;
 }
+.hero .watch-video span:hover,
 .btn:hover {
   opacity: 0.8;
   cursor: pointer;
