@@ -431,6 +431,7 @@ a {
 }
 .features .body{
   display: flex;
+  justify-content: space-between;
 }
 .features .images{
   display: flex;
@@ -449,7 +450,6 @@ a {
 /* ===feature left=== */
 .features .content{
   width: 41%;
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,6 +466,19 @@ a {
   width: 137px;
   height: 50px;
   background-color: var(--primary-color);
+}
+/* ====feature 2nd==== */
+.features-2nd .body{
+  margin-top: 70px;
+  flex-direction: row-reverse;
+}
+.features-2nd .content{
+  width: 49%;
+}
+.features-2nd .images img{
+  width: 470px;
+  width: 440px;
+  object-fit: cover;
 }
 
 
