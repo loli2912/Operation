@@ -236,17 +236,17 @@ a {
   margin-left: 28px;
 }
 /* ===popular===*/
-.break-all{
+.break-all {
   word-break: break-all;
 }
-.line-clamp{
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.line-clamp.line-2{
-  --line-clamp:2;
+.line-clamp.line-2 {
+  --line-clamp: 2;
 }
 .popular {
   margin-top: 135px;
@@ -287,7 +287,7 @@ a {
 .popular .course-item {
   border-radius: 12px;
   background: #fff;
-  border: 1px solid #E2DFDA;
+  border: 1px solid #e2dfda;
   flex: 1;
 }
 .popular .course-item:hover {
@@ -319,12 +319,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.popular .course-item .title a{
+.popular .course-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67; /* 166.667% */
-
 }
 .popular .course-item .value {
   color: #fea31b;
@@ -360,19 +359,25 @@ a {
   background-color: #171100;
 }
 /* ======feedback====== */
-.feedback{
-  background-color: #2E2100;
+.feedback {
+  background-color: #2e2100;
   padding: 96px 0;
 }
-.feedback-item{
+.feedback-list{
   display: flex;
+  overflow: hidden;
 }
-.feedback-item .info .avatar{
-  width: 72px;
-  height: 72px;
+.feedback-list .feedback-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+.feedback-item .info .avatar {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
-.feedback-item .info .member-name{
+.feedback-item .info .member-name {
   margin-top: 18px;
   color: #f7f7f7;
   font-family: var(--font-heading);
@@ -380,31 +385,41 @@ a {
   font-weight: 700;
   line-height: 1.42;
 }
-.feedback-item .info .desc{
+.feedback-item .info .desc {
   margin-top: 4px;
   color: #bfbcb2;
   font-size: 1.4rem;
   line-height: 1.8;
 }
 
-.feedback-item .info .dots{
+.feedback-item .info .dots {
   display: flex;
   margin-top: 28px;
   gap: 6px;
 }
-.feedback-item .info .dot{
+.feedback-item .info .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
   cursor: pointer;
 }
-.feedback-item .info .dot.active{
+.feedback-item .info .dot.active {
   background-color: var(--primary-color);
   cursor: default;
 }
 /* ====feedback bên phải==== */
-.feedback-item .content{
+.feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
+.feedback-item .content blockquote {
+  font-family: Poppins;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+/* ====feedback final, code 3 item==== */
