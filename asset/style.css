@@ -359,4 +359,52 @@ a {
   border-radius: 25px;
   background-color: #171100;
 }
+/* ======feedback====== */
+.feedback{
+  background-color: #2E2100;
+  padding: 96px 0;
+}
+.feedback-item{
+  display: flex;
+}
+.feedback-item .info .avatar{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+.feedback-item .info .member-name{
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback-item .info .desc{
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
 
+.feedback-item .info .dots{
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback-item .info .dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+.feedback-item .info .dot.active{
+  background-color: var(--primary-color);
+  cursor: default;
+}
+/* ====feedback bên phải==== */
+.feedback-item .content{
+  width: 66%;
+  margin-left: auto;
+}
